@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>Order App</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-container">
+        <div class="header">
+          <h2>Andrei's Diner</h2>
+          <p>The best in town.</p>
+        </div>
+        <div id="items-container"></div>
+      </section>
+
+      <div id="cart"></div>
+      <div id="order-confirmed"></div>
+
+      <div id="pay">
+        <h3>Enter your card details</h3>
+        <form class="payment-form">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="user-name"
+            required
+          />
+          <input
+            type="number"
+            placeholder="Enter card number"
+            required
+          />
+          <input
+            type="number"
+            placeholder="Enter CVV"
+            required
+          />
+          <div id="to-pay"></div>
+          <button
+            type="submit"
+            id="pay-btn"
+          >
+            Pay
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script
+      src="script.js"
+      type="module"
+    ></script>
+  </body>
+</html>

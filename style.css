@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sofia Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+}
+
+.header {
+  background-image: url("./images/headerimg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 167px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.section-container {
+  width: 390px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+}
+
+/*** Menu ***/
+
+#items-container {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.item-description {
+  width: 250px;
+}
+
+.item-ingredients {
+  color: grey;
+}
+
+.item-image {
+  width: 70px;
+  padding-right: 15px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-name {
+  font-size: 20px;
+}
+
+.item-price {
+  color: green;
+}
+
+.add-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid rgb(18, 3, 3);
+  background-color: #ffffff;
+}
+
+/***  Cart  ***/
+
+#cart {
+  margin: 0 auto;
+  width: 360px;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  width: 370px;
+  justify-content: space-between;
+  padding: 0 20px 5px 20px;
+}
+
+.cart-remove {
+  font-size: 12px;
+  padding-left: 20px;
+  border: none;
+  background-color: #ffffff;
+  color: grey;
+}
+
+.cart-item-price {
+  right: 0;
+}
+
+.cart-item__nr {
+  display: flex;
+
+}
+
+.cart-total {
+  float: right;
+  padding: 0 20px;
+}
+
+#confirm-btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #16DB99;
+  color: whitesmoke;
+}
+
+/*** Pay module ***/
+
+#pay {
+  display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 360px;
+    height: 542px;
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 1px #000;
+    text-align: center;
+    padding: 44px 24px 0px 24px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.payment-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 434px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 26px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#to-pay {
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+
+#pay-btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #16DB99;
+  color: whitesmoke;
+}
+
+/*** End message ***/
+
+.end-message {
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0px 20px;
+  height: 100px;
+  background-color: #ECFDF5;
+  color: #065F46;
+  font-size: 20px;
+}
+
+.order-again {
+  width: 300px;
+  height: 40px;
+  margin: 25px 0px 10px 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: #16DB99;
+  color: whitesmoke;
+}
+
